@@ -23,7 +23,7 @@ Enter Username and Password
    # Reads the workbook and store it in the datatable
    ${dataTable}=   Read Worksheet   ${sheetName}    True
 
-   # Iterating through each rown in the datatable
+   # Iterating through each row from the datatable list
    FOR    ${eachRow}    IN    @{dataTable}
        Log    ${eachRow}[Username]
        Log    ${eachRow}[Password]
